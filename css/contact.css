@@ -1,0 +1,132 @@
+.contact {
+    background-color: #242424;
+    margin-top: 40px;
+    padding-bottom: 56px;
+}
+
+.contact main {
+    height: 60vh;
+    padding-top: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 64px;
+}
+
+.contact main .message {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.contact main .message h2 {
+    font-size: 72px;
+}
+
+.contact main .message p {
+    width: 100%;
+    max-width: 480px;
+    line-height: 24px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #ccc;
+}
+
+/* FORM */
+
+.contact form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+
+.contact form input,
+textarea {
+    background-color: transparent;
+    border: none;
+    height: 56px;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+.contact form input::placeholder,
+textarea::placeholder {
+    color: #aaa;
+}
+
+.contact form textarea {
+    margin-top: 24px;
+}
+
+.contact form button {
+    align-self: flex-end;
+    margin-top: 24px;
+}
+
+.loader {
+    align-self: flex-end;
+    margin-top: 24px;
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #18acfe;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 2s linear infinite;
+    display: none;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* FOOTER */
+.contact footer {
+    border-top: 1px solid #fff;
+    padding-top: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact .footer nav {
+    margin-right: 40px;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+/* RESPONSIVO */
+
+@media screen and (max-width: 1024px) {
+    .contact main {
+        height: 100%;
+        flex-direction: column;
+    }
+
+    .contact main form {
+        width: 75%;
+    }
+
+    .contact .footer {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .contact  main .message h2 {
+        font-size: 48px;
+    }
+    .contact  main .message p {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* O SCROLL-BEHAVIOR DESCE SUAVE PARA A SESSÃO QUE ESTA LINKADA */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #151515;
+    color: #fff;
+}
+
+.spacing {
+    padding: 0em 12em;
+}
+
+.btn-contact {
+    width: fit-content;
+    color: #fff;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    border-bottom: 2px solid #18acfe;
+}
+
+.btn-contact:hover {
+    color: #18acfe;
+    border-bottom: 2px solid transparent;
+}
+
+.social-link {
+    color: #fff;
+    font-size: 24px;
+    transition: all 0.2s ease-in-out;
+}
+
+.github:hover {
+    color: #74C0FC;
+}
+
+.linkedin:hover {
+    color: #74C0FC;
+}
+
+/* SCROLLBAR */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #151515;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #18acfe;
+    border-radius: 20px;
+}
+
+/* RESPONSIVO */
+@media screen and (max-width: 1368px) {
+    .spacing {
+        padding: 0em 6em;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .spacing {
+        padding: 0em 2em;
+    }
+}
